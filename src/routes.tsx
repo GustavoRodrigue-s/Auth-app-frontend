@@ -6,9 +6,9 @@ import {
   Outlet,
 } from 'react-router-dom';
 
-import { useAuthContext } from './modules/Auth/hooks/useAuthContext';
+import { useAuthContext } from '@modules/Auth/hooks/useAuthContext';
 
-import { LoginPage, RegisterPage, PostsPage } from './pages';
+import * as P from './pages';
 
 const PrivateRoutes: React.FC = () => {
   const { isAuthenticated } = useAuthContext();
@@ -25,12 +25,12 @@ export const AppRoutes: React.FC = () => (
     <Routes>
       <Route element={<PublicRoutes />}>
         <Route path="/" element={<Navigate to="/login" />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/cadastro" element={<RegisterPage />} />
+        <Route path="/login" element={<P.LoginPage />} />
+        <Route path="/cadastro" element={<P.RegisterPage />} />
       </Route>
 
       <Route element={<PrivateRoutes />}>
-        <Route path="/posts" element={<PostsPage />} />
+        <Route path="/posts" element={<P.PostsPage />} />
       </Route>
     </Routes>
   </BrowserRouter>

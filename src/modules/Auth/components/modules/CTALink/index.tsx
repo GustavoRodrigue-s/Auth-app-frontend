@@ -1,7 +1,4 @@
-import {
-  Link,
-  Paragraph,
-} from '../../../../../commons/components/elements/texts';
+import { Link, Paragraph } from '@commons/components/elements/texts';
 
 import * as S from './styles';
 

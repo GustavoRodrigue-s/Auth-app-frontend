@@ -1,10 +1,11 @@
-import { useAuthContext } from '../modules/Auth/hooks/useAuthContext';
+import { useAuthContext } from '@modules/Auth/hooks/useAuthContext';
 
-import { PostsList } from '../modules/Posts/components/modules/PostsList';
-import { PrimaryButton } from '../commons/components/elements/buttons';
+import { PostsList } from '@modules/Posts/components/modules/PostsList';
+import { PrimaryButton } from '@commons/components/elements/buttons';
 
-import * as S from '../modules/Posts/styles';
-import { Logo } from '../commons/components/modules/Logo';
+import { Logo } from '@commons/components/modules/Logo';
+
+import * as S from '@modules/Posts/styles';
 
 const PostsPage: React.FC = () => {
   const { user, handleLogout } = useAuthContext();

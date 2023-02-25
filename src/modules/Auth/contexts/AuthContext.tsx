@@ -6,12 +6,9 @@ import {
   useCallback,
 } from 'react';
 
-import { cookies } from '../../../commons/providers';
+import { cookies } from '@commons/providers';
 
-import {
-  authenticationApi,
-  IError,
-} from '../../../services/api/authenticationAPI';
+import { authenticationApi, IError } from '@services/api/authenticationAPI';
 
 import * as T from '../types';
 
@@ -76,6 +73,7 @@ export const AuthContextProvider: React.FC<PropsWithChildren> = ({
       const errors: any = {
         400: 'Complete todos os campos!',
         401: 'Nome ou senha incorreto(s)!',
+        404: 'Nome ou senha incorreto(s)!',
         500: 'Houve um erro no servidor. Tente mais tarde!',
       };
 

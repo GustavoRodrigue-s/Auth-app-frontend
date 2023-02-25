@@ -1,5 +1,5 @@
-import { Paragraph } from '../../../../../commons/components/elements/texts';
-import { Logo } from '../../../../../commons/components/modules/Logo';
+import { Paragraph } from '@commons/components/elements/texts';
+import { Logo } from '@commons/components/modules/Logo';
 
 import * as S from './styles';
 

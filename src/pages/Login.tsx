@@ -1,10 +1,10 @@
-import { useAuthContext } from '../modules/Auth/hooks/useAuthContext';
+import { useAuthContext } from '@modules/Auth/hooks/useAuthContext';
 
-import { Form } from '../modules/Auth/components/modules';
-import { Header } from '../modules/Auth/components/modules/Header';
-import { CTALinks } from '../modules/Auth/components/modules/CTALink';
+import { Form } from '@modules/Auth/components/modules';
+import { Header } from '@modules/Auth/components/modules/Header';
+import { CTALinks } from '@modules/Auth/components/modules/CTALink';
 
-import * as S from '../modules/Auth/styles';
+import * as S from '@modules/Auth/styles';
 
 const LoginPage: React.FC = () => {
   const { handleLogin } = useAuthContext();

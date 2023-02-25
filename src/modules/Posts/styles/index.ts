@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { PrimaryButton } from '../../../commons/components/elements/buttons';
+import { PrimaryButton } from '@commons/components/elements/buttons';
 
 export const Container = styled.div`
   ${({ theme }) => css`

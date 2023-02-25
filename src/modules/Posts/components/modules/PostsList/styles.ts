@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Container as Loading } from '../../../../../commons/components/elements/customs/Loading/styles';
+import { Container as Loading } from '@commons/components/elements/customs/Loading/styles';
 
 export const Container = styled.div`
   margin-top: 64px;

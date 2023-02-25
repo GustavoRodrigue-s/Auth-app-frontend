@@ -1,6 +1,6 @@
 import { useState, useRef, FormEvent } from 'react';
 
-import { IError } from '../../../services/api/authenticationAPI';
+import { IError } from '@services/api/authenticationAPI';
 
 export interface Fields {
   username: string;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { authenticationApi } from '../../../services/api/authenticationAPI';
+import { authenticationApi } from '@services/api/authenticationAPI';
 
 import { PostProps } from '../components/elements/cards/Post';
 
@@ -8,19 +8,19 @@ export const usePosts = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [posts, setPosts] = useState<PostProps[]>([]);
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const {
-          data: { posts },
-        } = await authenticationApi.getPosts();
+  const handlePosts = async () => {
+    try {
+      const { data } = await authenticationApi.getPosts();
 
-        setPosts(posts);
-        setIsLoading(false);
-      } catch (e) {
-        console.log(e);
-      }
-    })();
+      setPosts(data.posts);
+      setIsLoading(false);
+    } catch {
+      //
+    }
+  };
+
+  useEffect(() => {
+    handlePosts();
   }, []);
 
   return {

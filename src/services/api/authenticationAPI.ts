@@ -1,8 +1,8 @@
 import { AxiosInstance, AxiosResponse } from 'axios';
 
-import { createAuthenticationApi } from '../../commons/services';
+import { createAuthenticationApi } from '@commons/services';
 
-import * as T from '../../modules/Auth/types';
+import * as T from '@modules/Auth/types';
 
 export interface IError {
   error: string;

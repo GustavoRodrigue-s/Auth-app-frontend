@@ -15,7 +15,16 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "noImplicitAny": false
+    "noImplicitAny": false,
+
+    "rootDirs": ["src"],
+    "baseUrl": "./src",
+
+    "paths": {
+      "@commons/*": ["commons/*"],
+      "@modules/*": ["modules/*"],
+      "@services/*": ["services/*"]
+    }
   },
   "include": ["src"]
 }

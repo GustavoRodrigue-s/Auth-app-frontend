@@ -1,7 +1,7 @@
-import { usePosts } from '../../../hook';
+import { usePosts } from '@modules/Posts/hooks';
 
 import { Post } from '../../elements/cards/Post';
-import { Loading } from '../../../../../commons/components/elements/customs';
+import { Loading } from '@commons/components/elements/customs';
 
 import * as S from './styles';
 

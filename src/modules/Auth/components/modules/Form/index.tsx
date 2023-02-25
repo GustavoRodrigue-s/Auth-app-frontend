@@ -1,13 +1,10 @@
-import { HandleSubmit, useForm } from '../../../hooks/useForm';
+import { HandleSubmit, useForm } from '@modules/Auth/hooks/useForm';
 
-import {
-  Input,
-  InputPassword,
-} from '../../../../../commons/components/elements/forms';
+import { Input, InputPassword } from '@commons/components/elements/forms';
 
-import { PrimaryButton } from '../../../../../commons/components/elements/buttons';
-import { Loading } from '../../../../../commons/components/elements/customs';
-import { ErrorMessage } from '../../../../../commons/components/elements/texts';
+import { PrimaryButton } from '@commons/components/elements/buttons';
+import { Loading } from '@commons/components/elements/customs';
+import { ErrorMessage } from '@commons/components/elements/texts';
 
 import * as S from './styles';
 
