@@ -4,24 +4,28 @@ import { PostsList } from '../modules/Posts/components/modules/PostsList';
 import { PrimaryButton } from '../commons/components/elements/buttons';
 
 import * as S from '../modules/Posts/styles';
+import { Logo } from '../commons/components/modules/Logo';
 
 const PostsPage: React.FC = () => {
   const { user, handleLogout } = useAuthContext();
 
   return (
     <S.Container>
-      <S.Contet>
+      <S.Content>
         <header>
-          <h1>
-            Seja bem-vindo, <span>{user?.username}</span>!
-          </h1>
-          <PrimaryButton size="md" onClick={handleLogout}>
-            Sair
-          </PrimaryButton>
+          <Logo />
+          <S.TitleWrapper>
+            <h1>
+              Seja bem-vindo, <span>{user?.username}</span>!
+            </h1>
+            <PrimaryButton size="md" onClick={handleLogout}>
+              Sair
+            </PrimaryButton>
+          </S.TitleWrapper>
         </header>
 
         <PostsList />
-      </S.Contet>
+      </S.Content>
     </S.Container>
   );
 };

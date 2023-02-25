@@ -11,9 +11,9 @@ export const Container = styled.div`
   `}
 `;
 
-export const Contet = styled.main`
+export const Content = styled.main`
   ${({ theme }) => css`
-    padding-top: 112px;
+    padding-top: 88px;
     width: 100%;
     max-width: 960px;
     margin: auto;
@@ -29,15 +29,24 @@ export const Contet = styled.main`
     }
 
     > header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 32px;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-      > ${PrimaryButton} {
-        height: 35px;
-      }
+    > header,
+    ${TitleWrapper} {
+      display: flex;
+      align-items: center;
     }
   `}
+`;
+
+export const TitleWrapper = styled.div`
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  > ${PrimaryButton} {
+    height: 35px;
+  }
 `;
