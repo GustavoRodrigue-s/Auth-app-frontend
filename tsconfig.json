@@ -18,7 +18,7 @@
     "noImplicitAny": false,
 
     "rootDirs": ["src"],
-    "baseUrl": "./src",
+    "baseUrl": "src",
 
     "paths": {
       "@commons/*": ["commons/*"],
